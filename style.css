@@ -1,0 +1,131 @@
+
+.image {
+    width: 100%; /* Ensure the image container takes full width */
+    overflow: hidden; /* Prevent overflow */
+    text-align: center; /* Center align content if needed */
+}
+
+.responsive-image {
+    border-radius: 15px; /* Rounded corners */
+    object-fit: cover; /* Maintain aspect ratio */
+    display: block; /* Remove bottom space for inline elements */
+    width: 100%; /* Image takes full width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
+.intro p {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.preptime {
+    background-color: rgb(252, 237, 245); /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px; /* Padding for spacing */
+    margin: 20px 0;
+}
+.preptime ul {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    line-height: 2;
+}
+.ingredients {
+
+}
+.ingredients ul {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    line-height: 2;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.instructions li {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    ont-weight: <weight>;
+    font-style: normal;
+    color: black;
+    line-height: 2;
+    list-style-position: outside;
+    padding-left: 10px;
+
+}
+ol {
+    color: rgb(110, 59, 59);
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+}
+.nutrition p {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+.ltr {
+    color: rgb(129, 37, 148);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h1 {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    color: rgb(110, 59, 59);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+p {
+    font-family: "Outfit", serif;
+}
+
+.nutrition table {
+    margin: 20px 0;
+    width: 60%; /* Optional: full width */
+    border-collapse: collapse; /* To avoid double borders */
+    border-spacing: 0 10px;
+}
+.nutrition th {
+    color: rgb(110, 59, 59);
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.nutrition td {
+    padding: 10px; /* Add padding to data cells */
+    border-bottom: 1px solid #ddd;
+}
+.instructions li::marker {
+    color: rgb(110, 59, 59);
+    font-weight: bold;
+}
+body {
+    margin: 0;
+    max-width: 375px; /* Set max-width for mobile */
+    margin: auto; /* Center the content */
+    padding: 20px; /* Padding for mobile */
+}
+header {
+    margin: 0;
+    width: 100%; /* Ensure header takes full width */
+}
+
+@media (min-width: 376px) {
+    body {
+        max-width: 1440px; /* Set max-width for desktop */
+        padding: 40px; /* More padding for desktop */
+    }
+    .responsive-image {
+        width: 100%; /* Ensure image is responsive on desktop */
+    }
+}
